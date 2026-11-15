@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Si utilizas este repositorio, cita el trabajo académico de origen."
+title: "Modelo predictivo de demanda de materiales para apoyar la planificación de compras mediante Random Forest"
+authors:
+  - family-names: "Tapia Caluqui"
+    given-names: "Miguel Angel"
+year: 2026
+type: software
+version: 1.0.0

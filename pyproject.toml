@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pronostico-materiales-rf30"
+version = "1.0.0"
+description = "Repositorio académico de pronóstico multihorizonte de materiales de superficies"
+requires-python = ">=3.10"
+authors = [{name="Miguel Angel Tapia Caluqui"}]
+dependencies = [
+  "numpy>=1.24,<3.0",
+  "pandas>=2.0,<3.0",
+  "scikit-learn>=1.3,<2.0",
+  "matplotlib>=3.7,<4.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4,<10", "nbformat>=5.9,<6", "jupyterlab>=4,<5"]
+
+[project.scripts]
+pronostico-rf30 = "material_forecasting.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
